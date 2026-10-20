@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiments &amp; Colophon | Dev Portfolio &amp; Garden</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>">
+  <style>
+    header, nav, main, section, article, footer, div {
+      border: 1px solid #777777;
+    }
+  </style>
+
+  <script>
+    class HelloWorld extends HTMLElement {
+      connectedCallback() {
+        console.log("Hello World!");
+      }
+    }
+    customElements.define("hello-world", HelloWorld);
+  </script>
+</head>
+<body>
+  <noscript>
+    <p>JavaScript is disabled in your browser. Canvas and console elements are displayed non-interactively.</p>
+  </noscript>
+
+  <header>
+    <h1>Dev Portfolio &amp; Garden</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="now.html">Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiments.html"><strong>Experiments</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p><span>experiments.html / Open-web playground</span></p>
+      <h2>Experiments &amp; Colophon</h2>
+      <p>An overview of browser experiments and information about how the site is built.</p>
+
+      <article>
+        <h3>Audio player</h3>
+        <p>Audio title / Description</p>
+        <audio controls>
+          <source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+
+      <article>
+        <h3>Video player</h3>
+        <p>Project demo &middot; 0:00 / Duration</p>
+        <video width="320" height="180" controls>
+          <source src="data:video/mp4;base64,AAAA" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <article>
+        <h3>Canvas element</h3>
+        <p>Canvas drawing area / Demo placeholder</p>
+        <canvas id="playgroundCanvas" width="280" height="80"></canvas>
+        <script>
+          const canvas = document.getElementById("playgroundCanvas");
+          const ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#e0e0e0";
+          ctx.fillRect(0, 0, 280, 80);
+          ctx.fillStyle = "#222222";
+          ctx.font = "14px monospace";
+          ctx.fillText("Canvas 2D Rendering Demo", 20, 45);
+        </script>
+      </article>
+
+      <article>
+        <h3>Web component demo</h3>
+        <p>Brief description of the component and its behavior.</p>
+        <hello-world></hello-world>
+        <div>
+          <span>Local state only (inspect console for "Hello World!")</span>
+        </div>
+      </article>
+
+      <template id="garden-item-blueprint">
+        <div class="blueprint-item">
+          <h4>Garden Blueprint</h4>
+          <p>Stored dormant in the DOM without script execution.</p>
+        </div>
+      </template>
+    </section>
+
+    <section>
+      <h2>Colophon</h2>
+
+      <article>
+        <h3>W3C HTML5 Validated</h3>
+        <p>Brief notes on markup, accessibility, and validation. Authored strictly in semantic HTML5 with 0 validator errors.</p>
+      </article>
+
+      <article>
+        <h3>Hosting platform</h3>
+        <p>Deployment method &middot; content delivery &middot; security &middot; runtime. Deployed statically via Netlify with continuous Git integration.</p>
+      </article>
+
+      <article>
+        <h3>E = mc<sup>2</sup></h3>
+        <p>Native, accessible mathematical notation. No image or plugin required.</p>
+        
+        <math display="block">
+          <mi>E</mi>
+          <mo>=</mo>
+          <mi>m</mi>
+          <msup>
+            <mi>c</mi>
+            <mn>2</mn>
+          </msup>
+        </math>
+
+        <h4>Why MathML Adoption Was Delayed Across Browsers</h4>
+        <p>
+          Although MathML has been part of the W3C specification since 1998, broad cross-browser adoption lagged for decades due to lack of consensus on typography rendering engines and high implementation complexity inside browser rendering cores. 
+          While Gecko (Firefox) supported MathML natively for years and WebKit (Safari) implemented it in 2016, Chromium (Chrome, Edge) removed its initial prototype and withheld full support. 
+          It was not until the standardized <strong>MathML Core</strong> initiative was finalized and subsequently shipped in <strong>Chromium 109 (January 2023)</strong> that true cross-browser baseline interoperability was finally achieved.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dylan Williams</p>
+    <p>An independent corner of the web.</p>
+    <nav>
+      <ul>
+        <li><a href="now.html">/now</a></li>
+        <li><a href="projects.html">/uses</a></li>
+        <li><a href="experiments.html">/colophon</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub &#x2197;</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn &#x2197;</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

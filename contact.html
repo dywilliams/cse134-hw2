@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Dev Portfolio &amp; Garden</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✉️</text></svg>">
+  <style>
+    header, nav, main, section, article, footer, aside, div, fieldset {
+      border: 1px solid #777777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dev Portfolio &amp; Garden</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="now.html">Now</a></li>
+        <li><a href="contact.html"><strong>Contact</strong></a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p><span>contact.html / Say hello</span></p>
+      <h2>Get in Touch</h2>
+      <p>Short introduction inviting project inquiries, questions, and general contact.</p>
+
+      <article>
+        <h3>Send a message</h3>
+        <p>All fields are required.</p>
+        <form action="about:blank" method="post">
+          <fieldset>
+            <legend>Inquiry Form</legend>
+
+            <p>
+              <label for="contact-name">Name</label><br>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+            </p>
+
+            <p>
+              <label for="contact-email">Email</label><br>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+            </p>
+
+            <p>
+              <label for="contact-message">Message</label><br>
+              <textarea id="contact-message" name="message" rows="6" cols="40" placeholder="Your message..." required></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Send</button>
+              <span>Your details are only used to reply.</span>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+
+      <aside>
+        <h3>Availability</h3>
+        <h4>Availability status</h4>
+        <p>Availability timeframe and types of work or collaboration considered.</p>
+        <p>Location &middot; Time zone</p>
+        <p>Expected response timeframe.</p>
+        <h4>PREFER EMAIL?</h4>
+        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </aside>
+
+      <dialog id="privacy-dialog" open>
+        <p>Notice: Form submissions are processed securely without tracking cookies.</p>
+        <button type="button">Dismiss</button>
+      </dialog>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dylan Williams</p>
+    <p>An independent corner of the web.</p>
+    <nav>
+      <ul>
+        <li><a href="now.html">/now</a></li>
+        <li><a href="projects.html">/uses</a></li>
+        <li><a href="experiments.html">/colophon</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub &#x2197;</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn &#x2197;</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
